@@ -68,3 +68,8 @@ Here too , we check , 200 success code with same answer ....
 
 ![image](https://user-images.githubusercontent.com/70746268/120201562-3869fe80-c243-11eb-8fcd-b794d9cb1994.png)
 
+11) In exchange.json ,
+
+![image](https://user-images.githubusercontent.com/70746268/120202324-1755dd80-c244-11eb-9d07-c0ee32fbbfe3.png)
+
+
