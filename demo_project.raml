@@ -1,0 +1,53 @@
+#%RAML 1.0
+title: Demo_project
+types:
+  Acc: !include datatypes/acc.raml
+
+/accounts:
+  get:
+    displayName: Account
+    queryParameters:
+      name:
+        displayName: Name of Account Holder
+        required: false
+        enum:
+          - JAYGANESH B
+          - SHARUKANMANI J
+          - BALAMURUGAN K
+          - REVATHY B
+          - RUSHILKUMAR B
+      country:
+        displayName: Country of Account holder
+        required: false
+        enum:
+          - AUSTRALIA
+          - MAURITIUS
+          - AMERICA
+    responses:
+      200:
+        body:
+          application/json:
+            type: Acc[]
+            examples:
+              output: !include examples/ACCexample.raml 
+  post:
+    body:
+      application/json:
+        type: Acc[]
+        examples:
+          input: !include examples/ACCNoID.raml
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              message: Account added (but not really)
+
+
+
+        
+
+
+          
+        
+
